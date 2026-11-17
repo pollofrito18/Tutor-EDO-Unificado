@@ -1,0 +1,60 @@
+test_aislamiento_en_interfaz_y_tutor_sin_clave (test_interfaz_unificada.Recorridos.test_aislamiento_en_interfaz_y_tutor_sin_clave) ... 2026-09-10 16:32:56.290 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_integral_y_metodo_alternativo (test_interfaz_unificada.Recorridos.test_integral_y_metodo_alternativo) ... 2026-09-10 16:32:58.177 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_modelos_3d_y_restauracion (test_interfaz_unificada.Recorridos.test_modelos_3d_y_restauracion) ... 2026-09-10 16:33:00.874 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_recorrido_aprender_resolver_historial (test_interfaz_unificada.Recorridos.test_recorrido_aprender_resolver_historial) ... 2026-09-10 16:33:03.514 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_tutor_con_respuesta_simulada_persistida (test_interfaz_unificada.Recorridos.test_tutor_con_respuesta_simulada_persistida) ... 2026-09-10 16:33:06.681 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_aliases_equivalentes (test_motor.PruebasEntrada.test_aliases_equivalentes) ... ok
+test_expresiones_fuera_de_lista_cerrada (test_motor.PruebasEntrada.test_expresiones_fuera_de_lista_cerrada) ... ok
+test_ordenes_y_derivadas_no_admitidas (test_motor.PruebasEntrada.test_ordenes_y_derivadas_no_admitidas) ... ok
+test_fallback_para_caso_no_clasificado (test_motor.PruebasNumericas.test_fallback_para_caso_no_clasificado) ... ok
+test_integracion_hacia_atras (test_motor.PruebasNumericas.test_integracion_hacia_atras) ... ok
+test_modelo_temperatura_contra_formula (test_motor.PruebasNumericas.test_modelo_temperatura_contra_formula) ... ok
+test_rechaza_dominio_invalido_y_explosion (test_motor.PruebasNumericas.test_rechaza_dominio_invalido_y_explosion) ... ok
+test_rechaza_intervalo_que_cruza_polo (test_motor.PruebasNumericas.test_rechaza_intervalo_que_cruza_polo) ... ok
+test_rk4_contra_exponencial (test_motor.PruebasNumericas.test_rk4_contra_exponencial) ... ok
+test_rk4_refinamiento_reduccion_del_error (test_motor.PruebasNumericas.test_rk4_refinamiento_reduccion_del_error) ... ok
+test_proceso_real (test_motor.PruebasServicio.test_proceso_real) ... ok
+test_proceso_rechaza_entrada_sin_detener_interfaz (test_motor.PruebasServicio.test_proceso_rechaza_entrada_sin_detener_interfaz) ... ok
+test_coeficiente_singular_con_solucion_constante (test_motor.PruebasSimbolicas.test_coeficiente_singular_con_solucion_constante) ... ok
+test_condiciones_iniciales_de_ambos_signos (test_motor.PruebasSimbolicas.test_condiciones_iniciales_de_ambos_signos) ... ok
+test_dato_inicial_fuera_de_dominio (test_motor.PruebasSimbolicas.test_dato_inicial_fuera_de_dominio) ... ok
+test_ejemplos_del_curso (test_motor.PruebasSimbolicas.test_ejemplos_del_curso) ... ok
+test_entrada_con_cancelacion_conserva_restriccion (test_motor.PruebasSimbolicas.test_entrada_con_cancelacion_conserva_restriccion) ... ok
+test_equilibrio_en_factor_integrante_de_y (test_motor.PruebasSimbolicas.test_equilibrio_en_factor_integrante_de_y) ... ok
+test_equilibrios_logisticos (test_motor.PruebasSimbolicas.test_equilibrios_logisticos) ... ok
+test_exactas_generadas_desde_potenciales (test_motor.PruebasSimbolicas.test_exactas_generadas_desde_potenciales) ... ok
+test_factores_integrantes_con_resultado_conocido (test_motor.PruebasSimbolicas.test_factores_integrantes_con_resultado_conocido) ... ok
+test_lineal_contra_solucion_independiente (test_motor.PruebasSimbolicas.test_lineal_contra_solucion_independiente) ... ok
+test_logaritmos_reales (test_motor.PruebasSimbolicas.test_logaritmos_reales) ... ok
+test_metodo_incompatible (test_motor.PruebasSimbolicas.test_metodo_incompatible) ... ok
+test_metodo_no_implementado_no_se_inventa (test_motor.PruebasSimbolicas.test_metodo_no_implementado_no_se_inventa) ... ok
+test_punto_aislado_de_nivel_no_se_afirma_como_trayectoria (test_motor.PruebasSimbolicas.test_punto_aislado_de_nivel_no_se_afirma_como_trayectoria) ... ok
+test_separable_solucion_conocida (test_motor.PruebasSimbolicas.test_separable_solucion_conocida) ... ok
+test_equilibrios_y_limites (test_unificacion.ModelosYAprendizaje.test_equilibrios_y_limites) ... ok
+test_familias_cumplen_dato_inicial_y_edo (test_unificacion.ModelosYAprendizaje.test_familias_cumplen_dato_inicial_y_edo) ... ok
+test_integral_y_euler_worker (test_unificacion.ModelosYAprendizaje.test_integral_y_euler_worker) ... ok
+test_practica_equivalencia (test_unificacion.ModelosYAprendizaje.test_practica_equivalencia) ... ok
+test_valores_independientes (test_unificacion.ModelosYAprendizaje.test_valores_independientes) ... ok
+test_errores (test_unificacion.NVIDIA.test_errores) ... ok
+test_formato_seguro_y_contexto (test_unificacion.NVIDIA.test_formato_seguro_y_contexto) ... ok
+test_respuesta_invalida (test_unificacion.NVIDIA.test_respuesta_invalida) ... ok
+test_sin_clave_no_hay_llamada (test_unificacion.NVIDIA.test_sin_clave_no_hay_llamada) ... ok
+test_aislamiento_resultados_y_chat (test_unificacion.Persistencia.test_aislamiento_resultados_y_chat) ... ok
+test_caducidad (test_unificacion.Persistencia.test_caducidad) ... ok
+test_cambio_clave_revoca_todas (test_unificacion.Persistencia.test_cambio_clave_revoca_todas) ... ok
+test_hash_y_cierre (test_unificacion.Persistencia.test_hash_y_cierre) ... ok
+test_login_limitado_y_mensaje_generico (test_unificacion.Persistencia.test_login_limitado_y_mensaje_generico) ... ok
+test_migraciones (test_unificacion.Persistencia.test_migraciones) ... ok
+test_notificaciones_pertenencia (test_unificacion.Persistencia.test_notificaciones_pertenencia) ... ok
+test_progreso_preferencias_reinicio (test_unificacion.Persistencia.test_progreso_preferencias_reinicio) ... ok
+test_respaldo_recuperable (test_unificacion.Persistencia.test_respaldo_recuperable) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 17.951s
+
+OK

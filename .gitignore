@@ -1,0 +1,14 @@
+.venv/
+.env
+.streamlit/secrets.toml
+datos/
+backups/
+__pycache__/
+*.pyc
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+.pytest_cache/
+Tutor_EDO_Portable/
+Tutor_EDO_Portable.zip
+Instalador_TutorEDO_Windows_x64.exe

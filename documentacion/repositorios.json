@@ -1,0 +1,79 @@
+[
+  {
+    "repositorio": "sympy/sympy",
+    "url": "https://github.com/sympy/sympy",
+    "estrellas": 14914,
+    "push": "2026-09-10T08:30:52Z",
+    "rama": "master",
+    "commit": "a23073ee516bbf60863dc8b82a8446b15e6348f4",
+    "archivado": false,
+    "licencia_api": "NOASSERTION",
+    "fecha_consulta": "2026-09-10"
+  },
+  {
+    "repositorio": "sympy/sympy_gamma",
+    "url": "https://github.com/sympy/sympy_gamma",
+    "estrellas": 715,
+    "push": "2024-04-20T00:33:05Z",
+    "rama": "master",
+    "commit": "3da0b1756dfcdebdc308fafdb0b9f0268fdfb00a",
+    "archivado": false,
+    "licencia_api": "NOASSERTION",
+    "fecha_consulta": "2026-09-10"
+  },
+  {
+    "repositorio": "scipy/scipy",
+    "url": "https://github.com/scipy/scipy",
+    "estrellas": 15005,
+    "push": "2026-09-10T16:40:36Z",
+    "rama": "main",
+    "commit": "4361d71ca6e5a7d3f6559d8d480f6db394e9eee6",
+    "archivado": false,
+    "licencia_api": "BSD-3-Clause",
+    "fecha_consulta": "2026-09-10"
+  },
+  {
+    "repositorio": "plotly/plotly.py",
+    "url": "https://github.com/plotly/plotly.py",
+    "estrellas": 18775,
+    "push": "2026-09-09T17:54:19Z",
+    "rama": "main",
+    "commit": "b104c6ad153cad0c043da9db2a0f62c3d2456928",
+    "archivado": false,
+    "licencia_api": "MIT",
+    "fecha_consulta": "2026-09-10"
+  },
+  {
+    "repositorio": "NVIDIA/GenerativeAIExamples",
+    "url": "https://github.com/NVIDIA/GenerativeAIExamples",
+    "estrellas": 4179,
+    "push": "2026-09-09T17:44:34Z",
+    "rama": "main",
+    "commit": "203b0de48d1142124842d56d4b40f3733888f5ee",
+    "archivado": false,
+    "licencia_api": "Apache-2.0",
+    "fecha_consulta": "2026-09-10"
+  },
+  {
+    "repositorio": "sqlalchemy/sqlalchemy",
+    "url": "https://github.com/sqlalchemy/sqlalchemy",
+    "estrellas": 12150,
+    "push": "2026-09-10T14:56:29Z",
+    "rama": "main",
+    "commit": "0be8efc7a100b2713bcae591f55cb53d3800152b",
+    "archivado": false,
+    "licencia_api": "MIT",
+    "fecha_consulta": "2026-09-10"
+  },
+  {
+    "repositorio": "pydy/pydy",
+    "url": "https://github.com/pydy/pydy",
+    "estrellas": 416,
+    "push": "2026-07-28T12:29:05Z",
+    "rama": "master",
+    "commit": "7ca52b7225991c96cc1dbac00d1940ec7d31e4f3",
+    "archivado": false,
+    "licencia_api": "BSD-3-Clause",
+    "fecha_consulta": "2026-09-10"
+  }
+]

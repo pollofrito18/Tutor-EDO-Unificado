@@ -1,0 +1,13 @@
+:root { color-scheme: light; }
+.block-container { max-width: 1180px; padding-top: 2.5rem; padding-bottom: 4rem; }
+.titulo-app {display:flex; gap:1rem; align-items:flex-start; padding:1.1rem 0 1.8rem; color:#1746B6;}
+.titulo-app h1 {font-size:2rem; line-height:1.2; margin:0; color:#14243E;}
+.titulo-app p {margin:.6rem 0 0; color:#41516A; line-height:1.6;}
+[data-testid="stSidebar"] {border-right:1px solid #CBD5E1;}
+[data-testid="stLatex"] {overflow-x:auto; padding:1rem .8rem; background:#F1F5FC; border-left:3px solid #1746B6; border-radius:5px;}
+.katex {font-size:1.25em;}
+button, input, textarea, select {font-size:1rem;}
+button:focus-visible, input:focus-visible, textarea:focus-visible, a:focus-visible {outline:3px solid #1746B6 !important; outline-offset:3px;}
+[data-testid="stCaptionContainer"] {color:#41516A;}
+@media (max-width:650px) { .block-container {padding:1.4rem 1rem;} .titulo-app h1 {font-size:1.6rem;} }
+@media (prefers-reduced-motion:reduce) { * {scroll-behavior:auto !important;} }

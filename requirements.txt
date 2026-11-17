@@ -1,0 +1,12 @@
+sympy==1.14.0
+numpy==2.3.5
+scipy==1.17.0
+streamlit==1.63.0
+plotly==7.0.0
+pandas==2.2.3
+requests==2.34.2
+SQLAlchemy==2.0.52
+argon2-cffi==25.1.0
+alembic==1.19.2
+python-dotenv==1.2.3
+psycopg[binary]==3.3.5

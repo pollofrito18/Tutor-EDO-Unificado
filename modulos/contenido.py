@@ -1,0 +1,88 @@
+"""Contenido educativo original, editable sin alterar la interfaz ni la base de datos."""
+LECCIONES = {
+ 'variables': {'titulo':'1. Variables: qué cambia y respecto a qué', 'nivel':'Fundamentos',
+  'importancia':'Una ecuación diferencial describe un cambio. Ayuda a anticipar temperaturas, poblaciones, velocidades y mezclas a partir de reglas y datos iniciales.',
+  'pasos':[
+   ('Identifica la cantidad','Si observas una bebida, T es la temperatura y t es el tiempo. La temperatura depende del tiempo.',r'T=T(t)'),
+   ('Compara dos instantes','La tasa media divide cuánto cambió la temperatura entre cuánto tiempo transcurrió. Bajar de 80 a 70 °C en 2 minutos da -5 °C/min.',r'\frac{\Delta T}{\Delta t}=\frac{70-80}{2-0}=-5\;{}^\circ C/\mathrm{min}'),
+   ('Pasa al cambio instantáneo','La derivada representa la tasa en un instante. Una pendiente negativa indica disminución.',r'\frac{dT}{dt}=\lim_{h\to0}\frac{T(t+h)-T(t)}{h}')],
+  'tip':'Escribe siempre las unidades antes de sustituir números.', 'error':'Confundir una temperatura con su tasa de cambio: °C y °C/min son magnitudes diferentes.'},
+ 'derivadas': {'titulo':'2. Derivadas: reglas sencillas', 'nivel':'Fundamentos',
+  'importancia':'Con una derivada se comprueba si una fórmula cumple la ley de cambio planteada.',
+  'pasos':[
+   ('Potencias','Multiplica por el exponente y réstale uno.',r'\frac{d}{dx}x^n=nx^{n-1},\qquad \frac{d}{dx}x^3=3x^2'),
+   ('Constantes y sumas','La derivada de una constante es cero. Deriva cada término de una suma.',r'\frac{d}{dx}(2x^2+5)=4x'),
+   ('Regla de la cadena','Deriva la función externa y multiplica por la derivada de su interior.',r'\frac{d}{dx}e^{2x}=e^{2x}\cdot2=2e^{2x}')],
+  'tip':'Al derivar exp(g(x)), no olvides multiplicar por g\'(x).', 'error':'Derivar exp(2*x) como exp(2*x) y perder el factor 2.'},
+ 'integrales': {'titulo':'3. Integrales: recuperar una cantidad', 'nivel':'Fundamentos',
+  'importancia':'Integrar una tasa permite recuperar la cantidad que cambia. La condición inicial determina la constante que falta.',
+  'pasos':[
+   ('Potencias','Aumenta el exponente en uno y divide entre el nuevo exponente, salvo n=-1.',r'\int x^n\,dx=\frac{x^{n+1}}{n+1}+C\quad(n\ne-1)'),
+   ('Caso logarítmico','Para 1/x aparece el logaritmo del valor absoluto. Se trabaja en intervalos que no contienen cero.',r'\int\frac1x\,dx=\ln|x|+C'),
+   ('Dato inicial','De y\'=2x se obtiene y=x²+C. Si y(0)=3, entonces C=3.',r'y=x^2+C,\qquad 3=0^2+C\Rightarrow y=x^2+3')],
+  'tip':'Deriva la antiderivada para comprobar tu respuesta.', 'error':'Omitir +C en la solución general o usar la regla de potencias cuando n=-1.'},
+ 'separables': {'titulo':'4. Variables separables', 'nivel':'Métodos',
+  'importancia':'Aparecen en crecimiento, decaimiento y enfriamiento. Separar permite integrar cada variable por su lado.',
+  'pasos':[
+   ('Reconoce el producto','Busca una función de x multiplicada por una función de y.',r'y\prime=f(x)g(y)'),
+   ('Separa y revisa equilibrios','Antes de dividir por g(y), revisa g(y)=0. Para y\'=2xy, y=0 también es solución.',r'\frac{dy}{y}=2x\,dx\quad(y\ne0)'),
+   ('Integra','Integra los dos lados y reúne las constantes.',r'\ln|y|=x^2+C'),
+   ('Expresa la familia','La constante multiplicativa puede incluir valores negativos y cero; con y(0)=1 queda exp(x²).',r'y=Ae^{x^2},\qquad y(0)=1\Rightarrow y=e^{x^2}')],
+  'tip':'Prueba por separado los ceros del factor que vas a dividir.', 'error':'Dividir por y y olvidar la solución y=0.'},
+ 'lineales': {'titulo':'5. Ecuaciones lineales', 'nivel':'Métodos',
+  'importancia':'Modelan procesos donde el cambio depende linealmente de la cantidad: mezclas, circuitos sencillos y enfriamiento.',
+  'pasos':[
+   ('Normaliza','El coeficiente de y\' debe ser uno en un intervalo donde la división sea válida.',r'y\prime+P(x)y=Q(x)'),
+   ('Calcula el factor integrante','Multiplica por la exponencial de una integral de P.',r'\mu(x)=e^{\int P(x)\,dx}'),
+   ('Reconoce una derivada','El lado izquierdo se convierte en la derivada de un producto.',r'(\mu y)\prime=\mu Q'),
+   ('Integra y despeja','Para y\'+2y=4, resulta y=2+C exp(-2x).',r'y=\frac{\int\mu Q\,dx+C}{\mu},\qquad y=2+Ce^{-2x}')],
+  'tip':'Verifica P y Q después de dividir por el coeficiente de la derivada.', 'error':'Llamar lineal a una ecuación con y² o sin(y).'},
+ 'exactas': {'titulo':'6. Ecuaciones exactas', 'nivel':'Métodos',
+  'importancia':'Una función potencial permite describir curvas que conservan una cantidad. Esa idea aparece en modelos de energía.',
+  'pasos':[
+   ('Compara derivadas parciales','Para M dx + N dy=0, verifica M_y=N_x en el dominio considerado.',r'\frac{\partial M}{\partial y}=\frac{\partial N}{\partial x}'),
+   ('Integra M respecto a x','Trata y como constante y añade una función desconocida de y.',r'F(x,y)=\int M(x,y)\,dx+g(y)'),
+   ('Encuentra g','Deriva F respecto a y e iguala a N.',r'F_y=N'),
+   ('Escribe el nivel','Ejemplo: 2x dx + 2y dy=0 conduce a círculos; sus ramas regulares se analizan por separado.',r'x^2+y^2=C')],
+  'tip':'Al integrar respecto a x, la constante puede depender de y.', 'error':'Afirmar que cualquier punto de F=C define una trayectoria regular y(x).'},
+ 'factores': {'titulo':'7. No exactas y factores integrantes', 'nivel':'Métodos',
+  'importancia':'Algunas ecuaciones que no son exactas pueden transformarse mediante un factor que no se anula en el intervalo.',
+  'pasos':[
+   ('Prueba un factor de x','Si el cociente depende solo de x, integra para construir el factor.',r'\frac{M_y-N_x}{N}=f(x),\qquad\mu(x)=e^{\int f(x)dx}'),
+   ('Prueba un factor de y','Si este cociente depende solo de y, usa la fórmula correspondiente.',r'\frac{N_x-M_y}{M}=g(y),\qquad\mu(y)=e^{\int g(y)dy}'),
+   ('Comprueba de nuevo','Multiplica M y N por el factor y vuelve a verificar exactitud.',r'\partial_y(\mu M)=\partial_x(\mu N)')],
+  'tip':'Revisa los divisores M y N antes de formar cocientes.', 'error':'Suponer que un factor depende de una sola variable cuando el cociente conserva ambas.'},
+ 'numericos': {'titulo':'8. Euler y Runge–Kutta', 'nivel':'Exploración',
+  'importancia':'Los métodos numéricos aproximan soluciones cuando la fórmula analítica es difícil o desconocida.',
+  'pasos':[
+   ('Define paso y dato inicial','Divide el intervalo y empieza desde un valor conocido.',r'h=\frac{x_f-x_0}{n},\qquad y(x_0)=y_0'),
+   ('Euler','Usa la pendiente al comienzo de cada paso. Si y\'=y, y0=1 y h=0.1, el primer valor es 1.1.',r'y_{n+1}=y_n+h f(x_n,y_n)'),
+   ('Runge–Kutta de orden 4','Promedia cuatro pendientes. Las tablas de la aplicación muestran cada una.',r'y_{n+1}=y_n+\frac h6(k_1+2k_2+2k_3+k_4)'),
+   ('Refina','Repite con h/2. Una diferencia pequeña entre dos métodos es evidencia útil, pero no es una cota rigurosa del error.',r'h_{nuevo}=h/2')],
+  'tip':'Usa el mismo dato inicial y el mismo intervalo al comparar métodos.', 'error':'Unir con una línea puntos que están a ambos lados de una singularidad.'},
+ 'dominio': {'titulo':'9. Dominio y comprobación', 'nivel':'Exploración',
+  'importancia':'Una fórmula puede ser correcta algebraicamente y no representar una solución válida en el intervalo elegido.',
+  'pasos':[
+   ('Conserva restricciones','Aunque y/y se simplifique a uno, la entrada original sigue excluyendo y=0.',r'\frac yy=1\quad\text{solo si }y\ne0'),
+   ('Sustituye la solución','Reemplaza y e y\' en la ecuación original. El residuo debe ser cero en su dominio.',r'R(x)=y\prime(x)-f(x,y(x))=0'),
+   ('Revisa el dato inicial','Una familia de soluciones no basta: la solución elegida debe pasar por el punto indicado.',r'y(x_0)=y_0')],
+  'tip':'Una comprobación simbólica no demuestra por sí sola unicidad ni el intervalo máximo de existencia.', 'error':'Creer que no encontrar fórmula equivale a que no existe solución.'},
+ 'vida': {'titulo':'10. De la vida real al modelo y a la gráfica 3D', 'nivel':'Aplicaciones',
+  'importancia':'Las ecuaciones sirven para comparar escenarios y tomar decisiones basadas en supuestos explícitos. Los datos medidos permiten ajustar y comprobar esos supuestos.',
+  'pasos':[
+   ('Elige una ley','En enfriamiento, cuanto mayor es la diferencia con el ambiente, mayor es la rapidez del cambio.',r'T\prime=-k(T-T_a)'),
+   ('Calcula un caso','Con T0=80 °C, ambiente 25 °C y k=0.1 por minuto, tras 10 minutos la temperatura estimada es 45.23 °C.',r'T(10)=25+55e^{-1}\approx45.23\;{}^\circ C'),
+   ('Compara condiciones iniciales','En el laboratorio 3D, cada corte es una curva temporal para un dato inicial. No se está afirmando que la temperatura tenga tres dimensiones físicas.',r'(t,T_0,T(t;T_0))'),
+   ('Interpreta con límites','El ambiente y la tasa se suponen constantes. Si cambian o hay otra fuente de calor, el modelo debe revisarse.',r'\lim_{t\to\infty}T(t)=T_a\quad(k>0)')],
+  'tip':'Distingue los parámetros supuestos de las mediciones reales.', 'error':'Presentar una predicción del modelo como un dato observado.'},
+}
+
+EJERCICIOS = {
+ 'derivada_potencia': {'enunciado':'Deriva x^3 respecto a x. Escribe solo la expresión resultante.', 'respuesta':'3*x^2', 'pista':'Multiplica por 3 y resta uno al exponente.', 'desarrollo':[(r'\frac{d}{dx}x^3=3x^{3-1}=3x^2','La regla de potencias reduce el exponente en uno.')]},
+ 'cadena': {'enunciado':'Deriva exp(2*x) respecto a x.', 'respuesta':'2*exp(2*x)', 'pista':'Multiplica por la derivada del exponente.', 'desarrollo':[(r'(e^{2x})\prime=e^{2x}\cdot2','La derivada de 2x es 2.')]},
+ 'integral': {'enunciado':'Encuentra una antiderivada de 2*x cuyo valor en x=0 sea 3.', 'respuesta':'x^2+3', 'pista':'Integra 2*x y usa el dato inicial para hallar C.', 'desarrollo':[(r'F=x^2+C','Integra con la regla de potencias.'),(r'F(0)=C=3','El dato inicial fija la constante.')]},
+ 'separable': {'enunciado':"Resuelve y'=y con y(0)=2. Escribe y(x).", 'respuesta':'2*exp(x)', 'pista':'La familia es A exp(x).', 'desarrollo':[(r'\frac{dy}{y}=dx','Separa variables; revisa y=0 aparte.'),(r'\ln|y|=x+C','Integra los dos lados.'),(r'y=Ae^x,\quad A=2','Aplica y(0)=2.')]},
+ 'lineal': {'enunciado':"Resuelve y'+2*y=4 con y(0)=3.", 'respuesta':'2+exp(-2*x)', 'pista':'La familia es 2+C exp(-2x).', 'desarrollo':[(r'\mu=e^{2x}','Calcula el factor integrante.'),(r'y=2+Ce^{-2x}','Integra el producto.'),(r'3=2+C\Rightarrow C=1','Usa el dato inicial.')]},
+ 'euler': {'enunciado':"Para y'=y, y(0)=1 y h=0.1, calcula un paso de Euler. Escribe un número.", 'respuesta':'1.1', 'pista':'Suma y0+h*f(0,y0).', 'desarrollo':[(r'y_1=1+0.1\cdot1=1.1','Euler usa la pendiente del inicio.')]},
+ 'enfriamiento': {'enunciado':'Escribe T(x) para T0=80, ambiente=25 y k=0.1.', 'respuesta':'25+55*exp(-0.1*x)', 'pista':'Usa T=Ta+(T0-Ta)exp(-kx).', 'desarrollo':[(r'T=25+(80-25)e^{-0.1x}','Sustituye los parámetros.'),(r'T=25+55e^{-0.1x}','Calcula la diferencia inicial.')]},
+}
